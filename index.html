@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURRENCY CONVERTER</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark-mode">
+    <main id="container">
+      <div>
+        <h1>CURRENCY CONVERTER</h1>
+        <p>BY <a href="www.twitter.com/S8GUN">S8</a></p>
+        <input type="text" name="display" readonly />
+      </div>
+
+      <div id="operations">
+        <div class="input">
+          <label for="From">FROM:</label>
+          <select name="from" id="from"></select>
+        </div>
+
+        <div class="input">
+          <label for="To">TO:</label>
+          <select name="to" id="to"></select>
+        </div>
+
+        <div class="input">
+          <label for="Amount">AMOUNT: </label>
+          <input type="number" name="amount" value="1" />
+        </div>
+      </div>
+      <button>Get Rate</button>
+     
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

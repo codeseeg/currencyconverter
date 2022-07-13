@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --bg-container: rgb(215, 215, 215);
+  --bg-operations: rgb(195, 192, 192);
+  --font-color: rgb(0, 0, 0);
+  --display: rgb(255, 255, 255);
+  --shadow: rgb(121, 121, 121);
+  --btn: rgb(227, 227, 227);
+}
+
+.dark-mode {
+  --bg-container: rgb(62, 62, 62);
+  --bg-operations: rgb(38, 38, 38);
+  --font-color: rgb(255, 255, 255);
+  --display: rgb(61, 61, 61);
+  --shadow: rgb(41, 41, 41);
+  --btn: rgb(0, 0, 0);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-container);
+  color: var(--font-color);
+}
+
+#container {
+  background-color: var(--bg-container);
+  height: 100vh;
+  min-height: 600px;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+#container div {
+  /* background-color: blue; */
+  margin: 0.5em;
+  text-align: center;
+}
+h1 {
+  font-size: 1.7em;
+  margin-top: 1.5em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+p a {
+  text-decoration: none;
+}
+#message {
+  margin-top: 0.1em;
+}
+
+#operations {
+  background-color: var(--bg-operations);
+  width: 80%;
+  /* position: absolute;
+    top: 50%;
+    left: 50%; */
+  transform: translate(10%);
+  box-shadow: 5px 5px 25px var(--shadow), -5px -5px 25px var(--bg-operations);
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1.5em;
+}
+
+input[name="display"] {
+  width: 70%;
+  margin-top: 0.1em;
+  background-color: var(--display);
+  color: var(--font-color);
+  text-align: center;
+}
+input:focus {
+  outline: none;
+}
+
+select,
+input {
+  font-size: .9em;
+  padding: 0.5em;
+  width: 30%;
+ 
+  margin: 0.3em;
+}
+
+label {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+button {
+  padding: 0.7em 0.3em;
+  font-size: 1em;
+  margin: auto;
+  cursor: pointer;
+  width: 40%;
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+  background-color: var(--btn);
+}
